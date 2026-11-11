@@ -1,0 +1,28 @@
+# BaseSpawner Konfiguration
+# Schematics (.schem) kommen in den Ordner: plugins/BaseSpawner/schematics
+
+# Nur in diesen Welten spawnen Basen
+worlds:
+  - world
+
+# Die Welt wird in Quadrate (Zellen) aufgeteilt. In jeder Zelle kann EINE Base spawnen.
+# Groesse in Bloecken. 300 = ungefaehr eine Base pro 300x300 Bloecke.
+cell-size: 300
+
+# Wahrscheinlichkeit pro Zelle, dass dort wirklich eine Base ist (0.0 bis 1.0)
+spawn-chance: 0.6
+
+# Hoehe (Y) der Mitte der Base. Tiefenschiefer-Bereich der Overworld ist unter Y=0.
+min-y: -55
+max-y: -15
+
+# Mindestabstand zum Weltspawn in Bloecken (damit keine Base am Spawn liegt)
+min-distance-from-spawn: 150
+
+# Luftbloecke der Schematic ueberschreiben nicht die Umgebung (true = Base wirkt natuerlicher)
+ignore-air: true
+
+# Kisten/Blocke der Schematic bleiben so wie gespeichert (Loot musst du selbst in die Schematic bauen)
+
+# Nachricht in der Konsole wenn eine Base spawnt
+log-spawns: true

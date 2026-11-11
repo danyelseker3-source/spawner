@@ -1,0 +1,14 @@
+name: BaseSpawner
+version: ${project.version}
+main: de.basespawner.BaseSpawner
+api-version: '1.21'
+softdepend: [WorldEdit, FastAsyncWorldEdit]
+description: Spawnt Schematics automatisch zufaellig in der Welt (OG Donut Style).
+commands:
+  basespawner:
+    description: BaseSpawner Befehle
+    usage: /basespawner <reload|test>
+    permission: basespawner.admin
+permissions:
+  basespawner.admin:
+    default: op
